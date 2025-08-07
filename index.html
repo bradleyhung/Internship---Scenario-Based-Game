@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lease or Lose</title>
+  </head>
+
+  <body>
+    <div class="welcome-page">
+      <div class="notification-bar">
+        <p class="logo">MyFiLi📶</p>
+        <p class="score" id="score">Tenant Wisdom: 0</p>
+      </div>
+
+      <div class="hide">
+        <h2><span>Lease or Lose: The Rental Riddle</span></h2>
+        <h4>
+          <span
+            >Your mission: survive the rental market with your finances,
+            dignity, and sanity intact. One wrong move, and you may end up
+            couch-surfing at Aunt Margie's... forever. Tracker: 🧠 Tenant Wisdom
+            Score (starts at 0; choices will increase or decrease it!)</span
+          >
+        </h4>
+      </div>
+
+      <div id="start-overlay">
+        <h2>🎧 Click to Start...</h2>
+      </div>
+
+      <!-- Scene -->
+      <div id="scene">
+        <h4 id="scene-title"></h4>
+        <h5 id="scene-prompt"></h5>
+        <div class="scene-content">
+          <h5 id="scene-details"></h5>
+          <img class="scene-image" src="" />
+        </div>
+        <audio class="scene-audio" preload="auto"></audio>
+        <h5 id="question">➤ What do you do?</h5>
+        <h4 id="choices-container"></h4>
+      </div>
+      <button id="mainMenuButton">Start Game</button>
+
+      <div id="next-question" class="hide">
+        <button type="button">Next question</button>
+      </div>
+
+      <div>
+        <button id="final-button" type="button" class="hide">
+          View Results
+        </button>
+      </div>
+
+      <!-- End Screen -->
+      <div id="end-scene" class="hide">
+        <h2 id="end-score"></h2>
+        <h2 id="end-text"></h2>
+        <img class="end-image" src="" />
+        <audio class="end-audio" preload="auto"></audio>
+      </div>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>

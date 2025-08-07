@@ -1,0 +1,136 @@
+.welcome-page {
+  display: flex;
+  margin: 1rem auto 15px !important;
+  padding: 0 1rem;
+  border-radius: 15px;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  text-align: center;
+  gap: 0.5vh;
+  border: 0.5rem ridge black;
+  background-color: seashell;
+  background-blend-mode: color;
+  outline: 0.5rem ridge lightgray;
+  height: 95vh;
+  box-sizing: border-box;
+}
+
+#start-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  z-index: 999;
+  cursor: pointer;
+}
+
+#scene {
+  width: 100%;
+}
+
+#scene-prompt {
+  margin-top: 0;
+  margin-bottom: 1vh;
+}
+
+.scene-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#scene-details {
+  margin: 0;
+  line-height: 1.5;
+  /*
+    ADD Below code if you want border around details, it's ugly :( 
+    border-style: solid;
+    border-radius: 10px; 
+    */
+}
+
+#question {
+  margin-top: 2vh;
+  margin-bottom: 0;
+}
+
+#choices-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  justify-content: left;
+  margin-bottom: 0.3rem;
+}
+
+.hide {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  z-index: -1;
+  scale: 0;
+}
+
+.notification-bar {
+  display: flex;
+  background: black;
+  width: calc(100% + 2.5rem);
+  color: white;
+  justify-content: space-around;
+  border-radius: 10px 0px 10px 10px;
+}
+
+#end-score {
+  font-size: xx-large;
+}
+
+#end-text {
+  font-size: medium;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#choices-container > button {
+  background-color: #fff8dc;
+  border: 0.05rem solid #222;
+  padding: 0.1rem;
+  cursor: pointer;
+  border-radius: 0.5em;
+}
+
+#choices-container > button:hover {
+  background-color: orange;
+  scale: 1.02;
+}
+
+#choices-container > button:active {
+  background-color: lightblue;
+}
+
+.scene-image,
+.end-image {
+  display: block;
+  width: 90vw;
+  max-width: 300px;
+  height: auto;
+  max-height: 25vh;
+  object-fit: contain;
+  border-radius: 0.5em;
+  margin-top: 5vh;
+  margin: 0;
+}
+
+#end-scene {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
